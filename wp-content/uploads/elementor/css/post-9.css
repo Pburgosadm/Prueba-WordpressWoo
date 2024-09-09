@@ -1,0 +1,26 @@
+.elementor-9 .elementor-element.elementor-element-bbd74f3{--display:flex;--min-height:100px;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;--background-transition:0.3s;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-9 .elementor-element.elementor-element-16edb8d{--display:flex;--min-height:100px;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;--background-transition:0.3s;--padding-top:10px;--padding-bottom:10px;--padding-left:0px;--padding-right:0px;}.elementor-9 .elementor-element.elementor-element-16edb8d:not(.elementor-motion-effects-element-type-background), .elementor-9 .elementor-element.elementor-element-16edb8d > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#D5D5D5EB;}.elementor-9 .elementor-element.elementor-element-16edb8d, .elementor-9 .elementor-element.elementor-element-16edb8d::before{--border-transition:0.3s;}.elementor-9 .elementor-element.elementor-element-04971a6{text-align:center;}.elementor-9 .elementor-element.elementor-element-04971a6 .elementor-heading-title{color:var( --e-global-color-text );}.elementor-9 .elementor-element.elementor-element-743ed5b .woocommerce-breadcrumb{color:var( --e-global-color-secondary );font-weight:500;text-align:center;}.elementor-9 .elementor-element.elementor-element-743ed5b .woocommerce-breadcrumb > a{color:var( --e-global-color-primary );}.elementor-9 .elementor-element.elementor-element-19e7b13{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--background-transition:0.3s;}.elementor-9 .elementor-element.elementor-element-4bece74{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--background-transition:0.3s;--padding-top:4em;--padding-bottom:4em;--padding-left:0em;--padding-right:0em;}.elementor-9 .elementor-element.elementor-element-3dc4f51{--additional-information-display:block;--purchase-button-hover-text-color:#FFFFFF;}.elementor-9 .elementor-element.elementor-element-3dc4f51 #payment #place_order{background-color:var( --e-global-color-primary );}.elementor-9 .elementor-element.elementor-element-3dc4f51 #payment #place_order:hover{background-color:var( --e-global-color-secondary );}:root{--page-title-display:none;}/* Start custom CSS for html, class: .elementor-element-c7ff8de */.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #ebebeb; /* Color del botón */
+    color: #000000; /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+.nav-button:last-child {
+    margin-right: 0; /* Elimina el margen a la derecha del último botón */
+}
+
+.nav-button:hover, .nav-button:active {
+    background-color: #777777; /* Color del botón al hacer hover */
+    color: #ffffff; /* Color del texto al hacer hover */
+}/* End custom CSS */

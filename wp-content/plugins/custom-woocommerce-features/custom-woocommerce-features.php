@@ -31,11 +31,17 @@ function cwcf_get_custom_message() {
     // Convertir el valor del total del carrito a float para comparar
     $cart_total_numeric = floatval(preg_replace('/[^\d.]/', '', $cart_total));
 
-    // Mensaje dinámico basado en el valor del carrito
-    if ($cart_total_numeric >= 100) {
-        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Gracias por tu compra. ¡Obtendrás un <strong style="font-weight: 600;">DESCUENTO del 10%</strong> en tu próxima compra al completar este pedido!</p>';
-    } else {
-        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Estás cerca de obtener un DESCUENTO del 10% en tu próxima compra. ¡Gasta más de $100 hoy para aplicar!</p>';
+    // Mensajes dinámicos basados en el valor del carrito
+    if ($cart_total_numeric < 50) {
+        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Estás cerca de obtener un DESCUENTO del 5% en tu próxima compra. ¡Gasta hoy $50 o más para obtenerlo!</p>';
+    } elseif ($cart_total_numeric >= 50 && $cart_total_numeric < 100) {
+        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Finalizando este pedido ya habrás ganado un 5% de descuento en tu próxima compra y estás muy cerca de INCREMENTAR el DESCUENTO al 10%. ¡Gasta hoy $100 o más para obtenerlo!</p>';
+    } elseif ($cart_total_numeric >= 100 && $cart_total_numeric < 150) {
+        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Finalizando este pedido ya habrás ganado un 10% de descuento en tu próxima compra y estás muy cerca de INCREMENTAR el DESCUENTO al 15%. ¡Gasta hoy $150 o más para obtenerlo!</p>';
+    } elseif ($cart_total_numeric >= 150 && $cart_total_numeric < 200) {
+        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">Finalizando este pedido ya habrás ganado un 15% de descuento en tu próxima compra y estás muy cerca de INCREMENTAR el DESCUENTO al 20%. ¡Gasta hoy $200 o más para obtenerlo!</p>';
+    } elseif ($cart_total_numeric >= 200) {
+        return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px; border-radius: 4px; margin: 0; box-shadow: none;">¡Felicidades! Haz superado un valor de compra de $200. Finalizando este pedido ya habrás ganado un ACUMULADO del 20% de descuento en tu próxima compra.</p>';
     }
 }
 
