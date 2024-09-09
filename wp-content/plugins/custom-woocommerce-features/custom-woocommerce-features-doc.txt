@@ -1,0 +1,102 @@
+
+Custom WooCommerce Features Plugin - Documentación
+==================================================
+
+Descripción General
+-------------------
+Este plugin personalizado para WooCommerce muestra un mensaje dinámico en la página de checkout, basado en el valor total del carrito. El mensaje puede ser mostrado directamente en el checkout o mediante el uso de un shortcode en cualquier página o publicación de WordPress.
+
+Requisitos del sistema
+----------------------
+- WordPress: Versión 5.0 o superior.
+- WooCommerce: Versión 3.0 o superior.
+- PHP: Versión 7.0 o superior.
+- Tema compatible: Cualquier tema compatible con WooCommerce (probado con Storefront y Hello).
+
+Instalación
+-----------
+
+Método 1: Instalación manual
+1. Descarga: Descarga los archivos del plugin y colócalos en tu carpeta wp-content/plugins.
+2. Subir al servidor:
+   - Navega a tu instalación de WordPress > wp-content/plugins/.
+   - Crea una carpeta llamada `custom-woocommerce-features`.
+   - Sube los archivos del plugin dentro de esa carpeta.
+   
+3. Activar el plugin:
+   - Inicia sesión en el panel de administración de WordPress.
+   - Ve a Plugins > Plugins instalados.
+   - Busca "Custom WooCommerce Features" y haz clic en "Activar".
+
+Método 2: Instalación desde el panel de WordPress
+1. Subir Plugin:
+   - Inicia sesión en el panel de administración de WordPress.
+   - Ve a Plugins > Añadir nuevo.
+   - Haz clic en "Subir plugin" y selecciona el archivo .zip del plugin.
+   - Haz clic en "Instalar ahora".
+   
+2. Activar el plugin:
+   - Después de instalarlo, haz clic en "Activar plugin".
+
+Uso del plugin
+--------------
+
+5.1. Mostrar el mensaje en la página de checkout
+El plugin automáticamente muestra un mensaje basado en el valor del carrito en la página de checkout. No es necesario hacer configuraciones adicionales para que el mensaje se muestre.
+
+Mensajes que se muestran:
+- Si el valor del carrito es mayor o igual a $100, se mostrará:
+  - "Gracias por tu compra. ¡Obtendrás un DESCUENTO del 10% en tu próxima compra al completar este pedido!"
+
+- Si el valor del carrito es inferior a $100, se mostrará:
+  - "Estás cerca de obtener un DESCUENTO del 10% en tu próxima compra. ¡Gasta más de $100 hoy para aplicar!"
+
+5.2. Usar el shortcode
+Este plugin también incluye un shortcode que permite mostrar el mensaje en cualquier página o entrada de WordPress.
+
+Shortcode:
+[custom_checkout_message]
+
+Cómo usar el shortcode:
+1. Ve a Páginas > Añadir nueva (o Entradas > Añadir nueva).
+2. En el editor de texto, inserta el shortcode [custom_checkout_message].
+3. Guarda la página o entrada.
+
+Personalización del mensaje
+---------------------------
+Si deseas personalizar el mensaje o los estilos del mensaje mostrado, puedes modificar la función `cwcf_get_custom_message()` en el archivo PHP del plugin.
+
+Cambiar el contenido del mensaje:
+1. Abre el archivo PHP del plugin (custom-woocommerce-features.php).
+2. Localiza la función `cwcf_get_custom_message()`.
+3. Modifica el contenido HTML del mensaje dentro de esta función.
+
+Ejemplo:
+if ($cart_total_numeric >= 100) {
+    return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px;">Gracias por tu compra. ¡Obtendrás un <strong>DESCUENTO del 10%</strong> en tu próxima compra!</p>';
+} else {
+    return '<p style="background-color: #56cd63; color: #000000; font-weight: 600; padding: 10px;">Estás cerca de obtener un DESCUENTO del 10%. ¡Gasta más de $100 hoy!</p>';
+}
+
+Actualizaciones del plugin
+--------------------------
+Actualmente, no hay configuraciones automáticas para las actualizaciones del plugin. Para actualizarlo manualmente:
+
+1. Desactivar el plugin: Ve a Plugins > Plugins instalados, busca el plugin y haz clic en "Desactivar".
+2. Subir la nueva versión: Sube la nueva versión del plugin en la carpeta wp-content/plugins/, reemplazando los archivos anteriores.
+3. Activar el plugin: Vuelve a activarlo en Plugins > Plugins instalados.
+
+Preguntas frecuentes
+--------------------
+
+¿Por qué no se muestra el mensaje en la página de checkout?
+- Asegúrate de que WooCommerce esté instalado y activo.
+- Verifica que tu carrito tenga productos y que el valor total del carrito esté correctamente calculado.
+
+¿El plugin afecta el rendimiento de la página de checkout?
+No, el plugin es liviano y no tiene dependencias adicionales. Solo muestra un mensaje en función del valor del carrito.
+
+Soporte
+-------
+Si tienes algún problema o pregunta relacionada con el plugin, puedes comunicarte con el desarrollador a través de pb.webdevso@gmailcom.
+

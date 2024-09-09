@@ -1,0 +1,7 @@
+ID,Type,SKU,Name,Published,Is featured,Visibility in catalog,Short description,Description,Tax status,In stock,Stock,Weight (kg),Length (cm),Width (cm),Height (cm),Sale price,Regular price,Categories,Tags,Images
+1,simple,SKU001,Sample Product 1,1,0,visible,This is a short description of product 1.,This is the detailed description of product 1.,taxable,1,50,0.5,10,20,5,20,25,Category 1,Tag 1,image1.jpg
+2,simple,SKU002,Sample Product 2,1,0,visible,This is a short description of product 2.,This is the detailed description of product 2.,taxable,1,100,0.8,15,25,10,30,35,Category 2,Tag 2,image2.jpg
+3,simple,SKU003,Sample Product 3,1,0,visible,This is a short description of product 3.,This is the detailed description of product 3.,taxable,1,30,0.3,8,18,7,10,15,Category 1,Tag 3,image3.jpg
+4,simple,SKU004,Sample Product 4,1,0,visible,This is a short description of product 4.,This is the detailed description of product 4.,taxable,1,200,1.0,12,30,8,40,45,Category 3,Tag 4,image4.jpg
+5,simple,SKU005,Sample Product 5,1,0,visible,This is a short description of product 5.,This is the detailed description of product 5.,taxable,1,70,0.6,11,22,6,25,30,Category 2,Tag 5,image5.jpg
+6,simple,SKU006,Sample Product 6,1,0,visible,This is a short description of product 6.,This is the detailed description of product 6.,taxable,1,80,0.9,14,28,9,50,55,Category 4,Tag 6,image6.jpg

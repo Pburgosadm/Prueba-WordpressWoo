@@ -1,0 +1,54 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    http://pruebawordpresswoo.test/storefront-child/
+ Description:  Tema hijo de Storefront
+ Author:       PbWebDevSEO
+ Author URI:   http://pruebawordpresswoo.test/
+ Template:     storefront
+ Version:      1.0.0
+ Text Domain:  storefront-child
+*/
+
+/* Estilos personalizados */
+
+.related.products ul.products {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.related.products ul.products li.product {
+    width: calc(33.333% - 20px); 
+    margin-bottom: 20px;
+}
+
+.related.products {
+    margin-top: 50px;
+}
+
+.related.products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.related.products ul.products li.product {
+    width: calc(33.333% - 20px); 
+    margin: 0 10px 20px 10px; 
+}
+
+.related.products ul.products li.product img {
+    height: 250px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.related.products ul.products li.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.related.products ul.products li.product h2 {
+    text-align: center; 
+}

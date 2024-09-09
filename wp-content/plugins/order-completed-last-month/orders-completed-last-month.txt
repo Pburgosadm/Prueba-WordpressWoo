@@ -1,0 +1,43 @@
+
+=== Orders Completed Last Month ===
+Contributors: PbWebDev
+Tags: WooCommerce, Orders, Admin
+Requires at least: 5.0
+Tested up to: 6.0
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Descripción ==
+Este plugin muestra todos los pedidos completados en el último mes en una página de administración personalizada dentro del panel de WordPress.
+
+== Instalación ==
+1. Descarga el plugin o clónalo desde el repositorio (si aplica).
+2. Sube la carpeta del plugin a la ruta /wp-content/plugins/ en tu servidor de WordPress.
+3. Activa el plugin desde el panel de administración de WordPress en "Plugins > Plugins Instalados".
+
+== Uso ==
+Este plugin crea una nueva opción en el menú de administración de WordPress bajo el nombre "Pedidos del mes". Al hacer clic en esta opción, se muestra una lista de los pedidos completados realizados en el último mes.
+
+== Funcionalidades ==
+- Muestra los pedidos en estado completados del último mes.
+- Incluye información del pedido como el nombre del cliente, fecha del pedido, y el total del pedido.
+
+== Seguridad ==
+- El plugin no puede ejecutarse directamente si no está dentro de WordPress, gracias a una comprobación de seguridad con `defined('ABSPATH')`.
+- Todos los datos del pedido son escapados correctamente utilizando funciones como `esc_html` y `wp_kses_post`.
+
+== Desinstalación ==
+Este plugin no guarda ninguna información adicional en la base de datos, por lo que no se requiere ninguna acción especial para desinstalarlo más allá de desactivar el plugin en el panel de administración de WordPress.
+
+== Preguntas frecuentes ==
+= ¿Qué pasa si no tengo WooCommerce activado? =
+El plugin está diseñado para trabajar con WooCommerce. Si WooCommerce no está activo, no funcionará correctamente.
+
+= ¿El plugin afecta el rendimiento de mi sitio? =
+No, el plugin utiliza consultas eficientes para obtener los datos necesarios solo cuando se accede a la página de administración de "Pedidos del mes".
+
+== Changelog ==
+= 1.0 =
+* Versión inicial del plugin.
+

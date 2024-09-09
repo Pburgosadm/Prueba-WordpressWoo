@@ -1,0 +1,46 @@
+
+=== Update Order Totals ===
+Contributors: PbWebDev
+Tags: WooCommerce, Orders, Totals
+Requires at least: 5.0
+Tested up to: 6.0
+Stable tag: 1.1
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Descripción ==
+Este plugin actualiza automáticamente los totales de los pedidos en WooCommerce después de completar el checkout. También incluye una opción manual en el panel de administración para actualizar los totales de pedidos que no se completaron previamente.
+
+== Instalación ==
+1. Descarga el plugin o clónalo desde el repositorio (si aplica).
+2. Sube la carpeta del plugin a la ruta /wp-content/plugins/ en tu servidor de WordPress.
+3. Activa el plugin desde el panel de administración de WordPress en "Plugins > Plugins Instalados".
+
+== Uso ==
+- El plugin actualiza automáticamente el total de los pedidos tras el proceso de checkout.
+- Se incluye una opción manual en el panel de administración para actualizar los totales de pedidos incompletos. Esto puede hacerse desde el menú "Actualizar Totales" en la sección de administración.
+
+== Funcionalidades ==
+- Actualización automática de los totales de pedidos al completar el checkout.
+- Posibilidad de actualizar manualmente los totales de pedidos incompletos mediante una opción en el panel de administración.
+
+== Seguridad ==
+- El plugin asegura que los totales de los pedidos se actualicen solo si el total calculado es mayor que cero.
+- No se guarda información sensible más allá de los totales de los pedidos.
+
+== Desinstalación ==
+El plugin no guarda información adicional en la base de datos. Para desinstalarlo, simplemente desactívalo en el panel de administración de WordPress.
+
+== Preguntas frecuentes ==
+= ¿El plugin afecta el rendimiento de mi sitio? =
+No, el proceso de actualización de totales se realiza solo después del checkout o cuando se ejecuta manualmente desde el panel de administración.
+
+= ¿Qué ocurre con los pedidos incompletos? =
+El plugin incluye una opción para actualizar los totales de pedidos incompletos creados antes de la activación del plugin, a través de un botón en el panel de administración.
+
+== Changelog ==
+= 1.1 =
+* Versión actual con menú para actualizar los pedidos incompletos.
+
+= 1.0 =
+* Versión inicial del plugin con actualización automática de totales en el checkout.
